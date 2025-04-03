@@ -41,7 +41,6 @@ header {
     transition: background 0.3s;
     display: inline-block;
     text-align: center;
-    font-weight: bold;
 }
 
 .btn:hover {
@@ -49,7 +48,7 @@ header {
 }
 
 .profile-image {
-    width: 120px; /* Adjust size of the profile image */
+    width: 120px; 
     height: 120px;
     border-radius: 50%;
     object-fit: cover;
@@ -67,7 +66,6 @@ header {
     margin-top: 5px;
 }
 
-/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
@@ -77,26 +75,16 @@ nav ul {
     margin-top: 10px;
 }
 
-nav ul li {
-    display: inline;
-}
-
-/* Apply the same styles to CV links */
-nav ul li a, .cv-link {
-    background: #021f88; /* Same as original buttons */
+nav ul li a {
     color: white;
-    padding: 10px 15px;
     text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background 0.3s;
-    display: inline-block;
-    text-align: center;
     font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
 }
 
-nav ul li a:hover, .cv-link:hover {
-    background: #28aaeb; /* Same hover effect */
+nav ul li a:hover {
+    color: #086ec8;
 }
 
 section {
@@ -115,7 +103,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-/* Contact Buttons Styling */
 .contact-buttons {
     display: flex;
     flex-direction: column;
@@ -151,26 +138,35 @@ h2 {
     transform: translateY(1px);
 }
 
-/* Mobile Responsive Styles */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #001868;
+    color: white;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* 📱 Mobile Responsive Styles */
 @media (max-width: 768px) {
     .container {
-        width: 95%; /* Make content take full width on mobile */
+        width: 95%;
         padding: 10px;
     }
 
     .header-content {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column;
         text-align: center;
         gap: 10px;
     }
 
     .profile-image {
-        width: 100px; /* Reduce size on smaller screens */
+        width: 100px; 
         height: 100px;
     }
 
     nav ul {
-        flex-direction: column; /* Stack menu links vertically */
+        flex-direction: column; 
         gap: 10px;
     }
 
@@ -180,12 +176,12 @@ h2 {
     }
 
     .btn, .cv-link {
-        width: 100%; /* Make buttons full width */
+        width: 100%;
         text-align: center;
     }
 
     section {
-        width: 90%; /* Make sections take more space */
+        width: 90%;
         margin: 10px auto;
         padding: 15px;
     }
@@ -196,19 +192,10 @@ h2 {
     }
 
     .contact-buttons button {
-        width: 100%; /* Make buttons full-width */
+        width: 100%;
     }
 
     footer {
-        font-size: 12px; /* Slightly reduce footer text size */
+        font-size: 12px;
     }
-}
-
-footer {
-    text-align: center;
-    padding: 15px;
-    background: #001868;
-    color: white;
-    margin-top: 20px;
-    font-size: 14px;
 }
