@@ -31,22 +31,6 @@ header {
     text-align: left;
 }
 
-.btn {
-    background: #021f88;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background 0.3s;
-    display: inline-block;
-    text-align: center;
-}
-
-.btn:hover {
-    background: #28aaeb;
-}
-
 .profile-image {
     width: 120px; 
     height: 120px;
@@ -87,6 +71,26 @@ nav ul li a:hover {
     color: #086ec8;
 }
 
+/* 🔹 Button Styles (for "View CV", "Download CV", and other links) */
+.btn, .cv-link {
+    background: #021f88;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover, .cv-link:hover {
+    background: #28aaeb;
+}
+
+/* Section Styling */
 section {
     background: #1E1E1E;
     padding: 30px;
@@ -103,6 +107,7 @@ h2 {
     margin-bottom: 15px;
 }
 
+/* Contact Buttons */
 .contact-buttons {
     display: flex;
     flex-direction: column;
