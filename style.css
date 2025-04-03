@@ -151,6 +151,59 @@ h2 {
     transform: translateY(1px);
 }
 
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* Make content take full width on mobile */
+        padding: 10px;
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+        gap: 10px;
+    }
+
+    .profile-image {
+        width: 100px; /* Reduce size on smaller screens */
+        height: 100px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack menu links vertically */
+        gap: 10px;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn, .cv-link {
+        width: 100%; /* Make buttons full width */
+        text-align: center;
+    }
+
+    section {
+        width: 90%; /* Make sections take more space */
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    .contact-buttons {
+        width: 100%;
+        align-items: center;
+    }
+
+    .contact-buttons button {
+        width: 100%; /* Make buttons full-width */
+    }
+
+    footer {
+        font-size: 12px; /* Slightly reduce footer text size */
+    }
+}
+
 footer {
     text-align: center;
     padding: 15px;
