@@ -1,127 +1,161 @@
-/* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #121212;
+    color: #E0E0E0;
     line-height: 1.6;
 }
 
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: auto;
-    padding: 20px 20px;
+    padding: 20px;
 }
 
-/* Header */
 header {
-    background: #681300;
+    background: #003487b6;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
     text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: row;
+    text-align: left;
+}
+
+.btn {
+    background: #021f88;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #28aaeb;
+}
+
+.profile-image {
+    width: 120px; /* Adjust size of the profile image */
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+.header-text h1 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.header-text p {
+    font-size: 18px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+/* Navigation Styling */
 nav ul {
     list-style: none;
     padding: 0;
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-top: 10px;
 }
 
 nav ul li {
     display: inline;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffaa00;
-}
-
-.btn {
-    background: #ffaa00;
+/* Apply the same styles to CV links */
+nav ul li a, .cv-link {
+    background: #021f88; /* Same as original buttons */
     color: white;
     padding: 10px 15px;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
 }
 
-.btn:hover {
-    background: #cc8800;
+nav ul li a:hover, .cv-link:hover {
+    background: #28aaeb; /* Same hover effect */
 }
 
-/* Sections */
 section {
-    background: white;
-    padding: 40px;
-    margin: 20px 0;
+    background: #1E1E1E;
+    padding: 30px;
+    margin: 20px auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 h2 {
-    color: #681300;
+    color: #410fc0;
     text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-/* Contact Form */
-form {
+/* Contact Buttons Styling */
+.contact-buttons {
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    margin: auto;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-label {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-input, textarea {
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.contact-buttons a {
     width: 100%;
-    font-size: 16px;
+    max-width: 250px;
 }
 
-textarea {
-    height: 120px;
-}
-
-button {
-    margin-top: 15px;
-    padding: 12px;
-    background: #681300;
+.contact-buttons button {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #007BFF;
     color: white;
     border: none;
+    border-radius: 8px;
     cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-    font-size: 16px;
-    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
-button:hover {
-    background: #aa2200;
+.contact-buttons button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
 }
 
-/* Footer */
+.contact-buttons button:active {
+    transform: translateY(1px);
+}
+
 footer {
     text-align: center;
-    padding: 20px;
-    background: #681300;
+    padding: 15px;
+    background: #001868;
     color: white;
     margin-top: 20px;
+    font-size: 14px;
 }
