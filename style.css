@@ -116,6 +116,30 @@ h2 {
     margin-top: 20px;
 }
 
+.contact-buttons a {
+    background: #021f88; /* Same as nav buttons */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    display: inline-block;
+    text-align: center;
+    width: 200px; /* Adjust button width */
+}
+
+.contact-buttons a:hover {
+    background: #28aaeb; /* Same hover effect */
+    transform: translateY(-2px);
+}
+
+.contact-buttons a:active {
+    transform: translateY(1px);
+}
+
+
 footer {
     text-align: center;
     padding: 15px;
